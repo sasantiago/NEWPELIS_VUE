@@ -1,0 +1,14 @@
+<div class="px-10">
+    <h1 class="text-lg font-bold">ACERCA DE NOSOTROS</h1>
+    <p class="text-xs">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam ratione <span Highlight>amet
+            consectetur adipisicing elit. Aperiam ratione consequuntur natus eius modi beatae optio architecto
+            repellendus</span> consequuntur natus eius modi beatae optio architecto repellendus labore voluptatem,
+        reiciendis quia recusandae sapiente error asperiores dolores quos laboriosam earum.</p>
+    <h3 class="text-xs">Numero de clientes: <app-counter [duration]="duration()" [message]="message()"
+            *ngIf="duration() > 0" /> </h3>
+</div>
+<app-wave-audio audioUrl="assets/v.mp3" />
+
+<input type="number" [value]="duration()" (change)="changeDuration($event)">
+
+<input type="text" [value]="message()" (change)="changeDuration($event)">
